@@ -7,7 +7,7 @@
 }
 
 body {
-    background-image: linear-gradient(to bottom, #9198e5, #9198e5);
+    background-color: #002339;
     font-family: "Ubuntu Sans", sans-serif;
     font-optical-sizing: auto;
     font-weight: 400;
@@ -17,7 +17,7 @@ body {
 
 .container {
     padding: 10px;
-    margin-top: 200px;
+    margin-top: 170px;
     margin-left: 100px;
     min-width: 100vh;
     width: 400px;
@@ -64,6 +64,14 @@ input::placeholder {
     line-height: 1; 
 }
 
+.input-inside i{
+    position: absolute;
+    top: 382px;
+    left: 650px;
+    z-index: 100;
+    font-size: 1.3rem;
+    cursor: pointer;
+}
 
 button {
     height: 50px;
@@ -83,7 +91,16 @@ button span {
     font-size: 1rem;
     padding-top: 0px;
     display: inline-block;
-    margin-left: 5px; 
+    margin-left: 3px; 
+}
+
+button i{
+    transform: skewX(-20deg);
+    cursor: pointer;
+}
+
+button i.material-icons {
+    font-size: 2rem;
 }
 
 
