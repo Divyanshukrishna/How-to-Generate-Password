@@ -10,8 +10,9 @@ body {
 
 .container {
     padding: 10px;
-    margin-top: 300px;
+    margin-top: 200px;
     margin-left: 100px;
+    min-width: 100vh;
     /* border: 2px solid red; */
     width: 400px;
     height: auto;
@@ -33,37 +34,73 @@ body {
 }
 
 .h1_heading hr{
-    height: 8px;
+    height: 7px;
     margin-bottom: 30px;
     background-color: green;
-    width: 513px;
+    color: green;
+    border: 0.1px solid green;
+    width: 523px;
     font-size: 1.4rem !important;
+    outline: none;
 
 }
 
 input{
     font-size: 2rem;
     width: 570px;
+    padding: 0px 0px 11px 10px;
     margin-bottom: 20px;
+
 }
 
 input::placeholder{
-    font-size: 0.9rem;
+    font-size: 1rem;
     padding: 0px auto 2px 10px;
-    justify-content: center;
+    /* justify-content: center; */
+    /* text-align: center; */
 }
 
-button{
-    height: 50px;
+/* button{
+    height: 70px;
     width: 230px;
     background-color: green;
     color: white;
-    font-size: 1rem;
-    padding-top: 0px;
+    text-align: center;
     justify-content: center;
 }
+button span{
+    font-size: 1rem;
+    padding-top: 0px;
+    display: inline-block;
+}
 button i{
-    height: 8px;
+    height: 6px;
+    color: white;
+} */
+
+button {
+    height: 70px;
+    width: 230px;
+    background-color: green;
+    color: white;
+    text-align: center;
+    justify-content: center;
+    display: flex; 
+    align-items: center; 
+}
+
+button span {
+    font-size: 1rem;
+    padding-top: 0px;
+    display: inline-block;
+    margin-left: 5px; 
+}
+
+button i {
+    height: 10px;
+    color: white;
+    padding-top: 0px;
+    margin-right: 5px; 
 }
 
 
