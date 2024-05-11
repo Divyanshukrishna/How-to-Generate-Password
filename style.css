@@ -73,6 +73,30 @@ input::placeholder {
     cursor: pointer;
 }
 
+
+i .tooltip{
+    visibility: hidden;
+    /* margin-top: 1px; */
+    border: 2px solid red;
+    position: absolute;
+    margin-left: 20px;
+    background-color: red;
+    color: white;
+    font-size: 1.2rem;
+    width: 80px;
+    text-align: center;
+    height: 40px;
+    /* justify-content: center; */
+    padding-top: 8px;
+}
+
+i:hover .tooltip{
+    visibility: visible;
+    transition: visibility .4s ease 0.1s;
+    border-radius: 10px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
 button {
     height: 50px;
     width: 210px;
@@ -85,6 +109,7 @@ button {
     font-size: 2rem;
     border: 2px solid green;
     outline: none;
+    cursor: pointer;
 }
 
 button span {
@@ -102,6 +127,8 @@ button i{
 button i.material-icons {
     font-size: 2rem;
 }
+
+
 
 
 
